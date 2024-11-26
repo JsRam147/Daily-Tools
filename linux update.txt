@@ -1,0 +1,7 @@
+#!/bin/bash
+figlet " Your Kali Linux OS will be updated shortly, Please Hold!!! "
+echo "please provide you admin password below"
+sudo apt-get update -y
+sudo apt-get upgrade -y
+figlet "*******The update was successfully completed*********"
+figlet "******* Happy Hacking *********"

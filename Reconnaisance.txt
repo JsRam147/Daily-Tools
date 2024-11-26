@@ -1,0 +1,30 @@
+#! /bin/bash
+figlet "Reconnaissance Activated"
+echo "Enter the domain Name $domain" 
+read domain
+whois $domain
+figlet "*********++++++********"
+nslookup $domain
+figlet "*********++++++********"
+dig $domain
+figlet "*********++++++********"
+nmap A $domain
+figlet "*********++++++********"
+whatweb $domain
+figlet "*********++++++********"
+theHarvester d $domain l 500 b google
+figlet "*********++++++********"
+metagoofil d $domain t pdf,doc,xls l 200 o 
+figlet "*********++++++********"
+sublist3r d $domain
+figlet "*********++++++********"
+nikto h $domain
+figlet "*********++++++********"
+wafw00f $domain
+figlet "*********++++++********"
+dirb http://$domain /usr/share/dirb/wordlists/common.txt
+figlet "*********++++++********"
+amass enum d $domain
+figlet "*********++++++********"
+reconng $domain
+figlet "*********++++++********"

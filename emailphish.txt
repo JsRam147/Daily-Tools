@@ -1,0 +1,20 @@
+#!bin/bash
+figlet "(-:  Welcome to Great Girigalan Magic Show  :-)"
+git clone https://github.com/megadose/holehe.git
+cd holehe
+python3 setup.py install
+figlet "holehe installation completed"
+cd ..
+git clone https://github.com/C3n7ral051nt4g3ncy/WhatsMyName-Python.git
+cd WhatsMyName-Python
+pip3 install -r requirements.txt
+figlet "Whatsmyname installation completed"
+echo "enter the target email for the info $username"
+read username
+python3 whatsmyname.py -u $username
+figlet "whatsmyname executed"
+cd ..
+cd holehe
+holehe $username
+figlet "holehe executed"
+figlet "Magic Show Completed"
